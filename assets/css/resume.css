@@ -1,0 +1,27 @@
+body {
+    background-color: lightgray!important;
+}
+
+.customContainer{
+    background-color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.customContainer div {
+    display: flex;
+    justify-content: center;
+}
+
+.avataImage {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    transform: translateY(-75px);
+}
+
+.headlineTitle h1 {
+    text-align: center;
+    transform: translateY(-50px);
+    text-transform: uppercase;
+}
