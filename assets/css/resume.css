@@ -25,3 +25,14 @@ body {
     transform: translateY(-50px);
     text-transform: uppercase;
 }
+
+
+
+
+/* MEDIA QUERIES */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .experience p.description {
+        display: none;
+    }
+}
