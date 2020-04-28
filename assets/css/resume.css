@@ -1,11 +1,24 @@
 body {
-    background-color: lightgray!important;
+    background-color: lightgray !important;
 }
 
-.customContainer{
+.customContainer {
     background-color: white;
     margin-top: 100px;
     margin-bottom: 100px;
+    padding: 0 20px 30px 20px;
+}
+
+.topSection,
+.middleSection,
+.bottomSection {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.experience,
+.education {
+    margin-top: 40px
 }
 
 .avataContainer div {
@@ -26,7 +39,122 @@ body {
     text-transform: uppercase;
 }
 
+.headlineTitle span {
+    color: #34af95;
+    font-weight: bold;
+    letter-spacing: 15px;
+}
 
+/* hr styling */
+hr {
+    border-color: #34af95 !important;
+}
+
+hr.firstHr {
+    transform: translateY(-30px);
+}
+
+.experience hr {
+    margin-right: 30px;
+}
+
+/* ==== Bottom Parts ==== */
+.sectionTitle {
+    color: orange;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.subSectionBox {
+    margin: 20px 0;
+}
+
+/* Education */
+.education .subSectionBox {
+    margin-right: 30px;
+    align-items: center;
+}
+
+.education .subSectionBox div:first-child>p {
+    font-weight: bold;
+    color: #34af95;
+}
+
+.eduDesBox {
+    background-color: red;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.eduDesBox p,
+.experience p,
+.education .subSectionBox p {
+    margin-bottom: 0;
+}
+
+/* Experience */
+.experience .subSectionBox div.row {
+    align-items: center;
+}
+
+.experience div.subSectionBox div.col-3 p:first-child {
+    color: #34af95;
+}
+
+p.year {
+    font-weight: lighter;
+    color: gray;
+    font-style: italic;
+}
+
+.experience .jobTitle {
+    font-weight: bold;
+    color: orange;
+}
+
+/* contact */
+.contact i {
+    font-size: 20px;
+    color: #34af95;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+/* skills */
+.technicalSkills p,
+.softSkills p {
+    background-color: orange;
+    padding: 10px 5px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.softSkills p {
+    background: #34af95;
+}
+
+/* hobbie sections */
+.hobbies p {
+    background-color: red;
+    padding: 10px 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* fun fact section */
+.funFact {
+    justify-content: space-between;
+}
+
+.funFact span {
+    padding-right: 10px;
+    color: #34af95;
+    font-size: 20px;
+}
 
 
 /* MEDIA QUERIES */
@@ -34,5 +162,17 @@ body {
 @media only screen and (max-width: 768px) {
     .experience p.description {
         display: none;
+    }
+
+    .experience hr {
+        margin-right: 0;
+    }
+
+    .education .subSectionBox {
+        margin-right: 0;
+    }
+
+    .experience .jobTitle {
+        float: right;
     }
 }
