@@ -4,6 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
     <title>Sennior Care Final</title>
     <!-- local style sheet -->
     <link rel="stylesheet" href="assets/css/defaultStyle.css" type="text/css" />
@@ -18,35 +25,12 @@
 </head>
 
 <body>
-    <!-- BS navbar -->
-    <nav class="navbar navbar-expand-lg customNavBg">
-        <a class="navbar-brand" href="index.html"><b>VCD 5D</b></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mycustomNav"
-            aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">
-                <i class="fas fa-bars"></i>
-            </span>
-            </span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="mycustomNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="cssTraining.html">Resume</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
     <!-- resssume section -->
     <div class="container customContainer">
         <section class="topSection">
             <div class="row avataContainer">
                 <div class="col-12">
-                    <img src="assets/images/avata.jpg" class="avataImage" />
+                    <a href="https://vcd5dcpp.github.io/" target="_blank"><img src="assets/images/avata.jpg" class="avataImage" /></a>
                 </div>
             </div>
 
@@ -74,7 +58,8 @@
                         <p>
                             I am an UX/UI developer with professional background in Graphic Deisgn.
                             <br>
-                            Strong focus on front-end developemnt and iOS app development in Swift and hyprid apps development in React Native
+                            Strong focus on front-end developemnt and iOS app development in Swift and hyprid apps
+                            development in React Native
                         </p>
                     </div>
 
@@ -138,7 +123,7 @@
                                 </div>
                             </div>
 
-                            <hr/>
+                            <hr />
 
                             <div class="row">
                                 <div class="col-3">
@@ -153,6 +138,28 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- fun fact -->
+                    <div class="funFactSection">
+                        <h5 class="sectionTitle">// fun facts</h5>
+                        <div class="row funFact">
+                            <div class="col-12 col-md-6">
+                                <p>
+                                    <span><i class="fas fa-guitar"></i></span>
+                                    I play guitar in a all girl punk band
+                                </p>
+                            </div>
+                            <div class="col-12 d-md-none">
+                                <hr />
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p>
+                                    <span><i class="fas fa-running"></i></span>
+                                    I can run really fast
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- right handside -->
@@ -161,23 +168,32 @@
                     <h5 class="sectionTitle">// Contact</h5>
                     <div class="row subSectionBox contact">
                         <div class="col">
-                            <p>
-                                <span><i class="fas fa-phone-square"></i></span>
-                                Phone
-                            </p>
+                            <a href="tel:(909) 888-9999" class="btn" data-toggle="tooltip" data-placement="top"
+                                title="(909) 888-9999">
+                                <p>
+                                    <span><i class="fas fa-phone-square"></i></span>
+                                    Phone
+                                </p>
+                            </a>
                         </div>
 
                         <div class="col">
-                            <p>
-                                <span><i class="fas fa-envelope-square"></i></span>
-                                Email
-                            </p>
+                            <a href="mailto: vcd@cpp.edu" class="btn" data-toggle="tooltip" data-placement="top"
+                                title="vcd@cpp.edu">
+                                <p>
+                                    <span><i class="fas fa-envelope-square"></i></span>
+                                    Email
+                                </p>
+                            </a>
                         </div>
 
                         <div class="col">
-                            <p>
-                                <span><i class="fab fa-github-square"></i></span> Github
-                            </p>
+                            <a href="https://github.com/vcd5dCpp" target="_blank" class="btn" data-toggle="tooltip"
+                                data-placement="top" title="https://github.com/vcd5dCpp">
+                                <p>
+                                    <span><i class="fab fa-github-square"></i></span> Github
+                                </p>
+                            </a>
                         </div>
                     </div>
 
@@ -251,35 +267,61 @@
         </section>
 
         <section class="bottomSection">
-            <!-- fun fact -->
-            <h5 class="sectionTitle">// fun facts</h5>
-            <div class="row funFact">
-                <div class="col-12 col-md-6">
-                    <p>
-                        <span><i class="fas fa-guitar"></i></span>
-                        I play guitar in a all girl punk band
-                    </p>
+            <h5 class="sectionTitle">// Projects</h5>
+            <div class="row projectSection">
+                <div class="col-md-3">
+                    <a href="index.html"><p>Sennior Care Center</p></a>
                 </div>
-                <div class="col-12">
-                    <hr/>
+
+                <div class="col-md-9">
+                    <ul>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            Create Sitemap for brainstorm web page and navigation flow
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            Create low-fi wireframe for resposive structure
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            Create UI Style Guide/Design System to maintain a consisten identity throughout the
+                            website
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            Create User Persona to target right audience
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            Create hi-fi interactive & responsive prototypes using Adobe XD
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-12 col-md-6">
-                    <p>
-                        <span><i class="fas fa-running"></i></span>
-                        I can run really fast
-                    </p>
+            </div>
+
+            <hr />
+
+            <div class="row projectSection">
+                <div class="col-md-3">
+                    <p>BenVie Restaurant</p>
+                </div>
+
+                <div class="col-md-9">
+                    <ul>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            Concept for a new mordern Vietnamese restaurant identity/branding design.
+                        </li>
+                        <li>
+                            <span><i class="fas fa-hand-point-right"></i></span>
+                            Express vietnamese culture through iconic stork logo and abstract rice field elements
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
     </div>
-
-    <!-- fixed footer -->
-    <a href="index.html">
-        <footer>
-            <p>This is sticky footer</p>
-        </footer>
-    </a>
-
 
 
     <!-- boostrap script -->
@@ -289,6 +331,12 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        })
     </script>
 </body>
 

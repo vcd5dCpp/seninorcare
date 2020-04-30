@@ -4,49 +4,114 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
     <title>Sennior Care Final</title>
     <!-- local style sheet -->
     <link rel="stylesheet" href="assets/css/defaultStyle.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/homePage.css" type="text/css" />
+
     <!-- bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/938a18ead6.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    <!-- BS navbar -->
-    <nav class="navbar navbar-expand-lg customNavBg">
-        <a class="navbar-brand" href="index.html"><b>VCD 5D</b></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mycustomNav"
-            aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">
-                <i class="fas fa-bars"></i>
-            </span>
-            </span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="mycustomNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href="tammyResume.html">Resume</a>
-                </li>
-            </ul>
+    <div class="container-fluid nonProfitContainer">
+        <div class="logoContainer">
+            <img src="assets/images/logo.png" class="logo" width="400" height="auto" />
         </div>
-    </nav>
+
+        <!-- navigation  -->
+        <nav class="navbar navbar-expand-md nonProfitNav">
+            <!-- hamburger icon -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nonProfitNav"
+                aria-controls="nonProfitNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars"></i>
+                </span>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nonProfitNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link smoothScroll" href="#aboutSection">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smoothScroll" href="#siteMapSection">Sitemap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smoothScroll" href="#styleGuideSection">Style Guide</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">User Persona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Wireframe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Prototypes</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
 
-    <!-- fixed footer -->
-    <a href="index.html">
-        <footer>
-            <p>This is sticky footer</p>
-        </footer>
-    </a>
+        <!-- ABout section -->
+        <section id="aboutSection" data-spy="scroll" data-offset="0" data-target="siteMapSection">
+            <div class="aboutDiv">
+                <p>this is my about section</p>
+                <p>this is my about section</p>
+                <p>this is my about section</p>
+                <p>this is my about section</p>
+                <p>this is my about section</p>
+                <p>this is my about section</p>
+            </div>
+        </section>
+
+        <section id="siteMapSection" data-spy="scroll" data-offset="0" data-target="siteMapSection">
+            <div class="sitemapDiv">
+                <p>this is my sitemap section</p>
+                <p>this is my sitemap section</p>
+                <p>this is my sitemap section</p>
+                <p>this is my sitemap section</p>
+                <p>this is my sitemap section</p>
+                <p>this is my sitemap section</p>
+            </div>
+        </section>
+
+        <section id="styleGuideSection" data-spy="scroll" data-offset="0" data-target="styleGuideSection">
+            <div class="styleGuideDiv">
+                <p>this is my styleguide section</p>
+                <p>this is my styleguide section</p>
+                <p>this is my styleguide section</p>
+                <p>this is my styleguide section</p>
+                <p>this is my styleguide section</p>
+                <p>this is my styleguide section</p>
+            </div>
+        </section>
+
+        <section class="endNoteSection">
+            <h3>Thank You!</h3>
+            <p>Tammy Phillips</p>
+            <p><span>UX/UI</span> Designer & Developer</p>
+            <div class="resumeBtnContainer">
+                <a href="tammyResume.html" class="resumeBtn">Resume</a>
+            </div>
+        </section>
+
+    </div>
 
 
 
@@ -58,6 +123,26 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+
+    <!-- custom script for and smooth scroll -->
+    <script>
+        $(document).ready(function () {
+            // smooth scroll for scroll spy
+            $("a.smoothScroll").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>
