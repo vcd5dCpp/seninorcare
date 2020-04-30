@@ -17,7 +17,7 @@ body {
 }
 
 .experience,
-.education {
+.education, .funFactSection {
     margin-top: 40px
 }
 
@@ -58,7 +58,7 @@ hr.firstHr {
     margin-right: 30px;
 }
 
-/* ==== Bottom Parts ==== */
+/* ==== Middle Section ==== */
 .sectionTitle {
     color: orange;
     text-transform: uppercase;
@@ -113,6 +113,17 @@ p.year {
     color: orange;
 }
 
+/* fun fact section */
+.funFact {
+    justify-content: space-between;
+}
+
+.funFact span {
+    padding-right: 10px;
+    color: #34af95;
+    font-size: 20px;
+}
+
 /* contact */
 .contact i {
     font-size: 20px;
@@ -145,15 +156,33 @@ p.year {
     border-radius: 10px;
 }
 
-/* fun fact section */
-.funFact {
-    justify-content: space-between;
+/* === bottom section ===*/
+.bottomSection .projectSection{
+    align-items: center;
 }
 
-.funFact span {
-    padding-right: 10px;
-    color: #34af95;
-    font-size: 20px;
+.projectSection > div p {
+ color:#34af95;
+ font-weight: bold;
+}
+
+.projectSection > div a p:hover {
+    color: red;
+}
+
+
+.projectSection > div a:hover {
+    text-decoration: none;
+}
+
+.projectSection ul{
+    list-style: none;
+    padding: 0;
+}
+
+.projectSection ul > li i {
+    color: red;
+    margin-right: 5px;
 }
 
 
