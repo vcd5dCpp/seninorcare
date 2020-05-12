@@ -19,14 +19,13 @@
     <!-- bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/938a18ead6.js" crossorigin="anonymous"></script>
 
 </head>
 
-<body>
+<body id="topPage" data-spy="scroll" data-offset="0" data-target="topPage">
     <div class="container-fluid nonProfitContainer">
         <div class="logoContainer">
             <img src="assets/images/logo.png" class="logo" width="400" height="auto" />
@@ -111,6 +110,18 @@
             </div>
         </section>
 
+        <!-- Tool tip and scroll spy -->
+        <section class="row customToolTip">
+            <div class="col-12 text-center">
+                <a class="btn smoothScroll" data-toggle="tooltip" data-placement="right" title="Scroll to Top"
+                    href="#topPage">
+                    <span>
+                        <i class="fas fa-chevron-circle-up"></i>
+                    </span>
+                </a>
+            </div>
+        </section>
+
     </div>
 
 
@@ -127,6 +138,9 @@
     <!-- custom script for and smooth scroll -->
     <script>
         $(document).ready(function () {
+            // tool tip
+            $('[data-toggle="tooltip"]').tooltip();
+
             // smooth scroll for scroll spy
             $("a.smoothScroll").on('click', function (event) {
                 if (this.hash !== "") {

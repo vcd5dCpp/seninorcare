@@ -82,6 +82,28 @@ div#nonProfitNav>ul.navbar-nav {
     color: white
 }
 
+/* === custom tool tip ==== */
+.customToolTip {
+    margin: 40px auto;
+}
+
+.customToolTip a.btn span i.fas.fa-chevron-circle-up {
+    color: orange;
+    font-size: 25px;
+}
+
+.customToolTip a.btn span i.fas.fa-chevron-circle-up:hover {
+    color: #34af95
+}
+
+.tooltip-inner {
+    background-color: #34af95 !important;
+}
+
+.bs-tooltip-right .arrow::before {
+    border-right-color: #34af95 !important;
+}
+
 
 
 
